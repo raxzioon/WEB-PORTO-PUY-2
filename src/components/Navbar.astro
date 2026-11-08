@@ -1,0 +1,142 @@
+---
+import { siteContent } from '../data/content';
+---
+
+<header class="sticky top-0 z-40 w-full bg-[#FFE3EE] border-b-[3px] border-[#0A0A0A]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+    <!-- Brand -->
+    <a href="#top" class="flex items-center gap-2 group focus:outline-none" aria-label="Beranda Puteri Najma">
+      <span class="w-9 h-9 bg-[#FF3D8B] border-[3px] border-[#0A0A0A] shadow-brutal-sm flex items-center justify-center font-heading font-extrabold text-[#0A0A0A] text-lg group-hover:bg-[#FFE45C] transition-colors">
+        PN
+      </span>
+      <div class="flex flex-col">
+        <span class="font-heading font-extrabold text-xl tracking-tight text-[#0A0A0A] leading-none">
+          PUTERI NAJMA
+        </span>
+        <span class="font-mono text-[11px] font-bold text-[#8F0F4A] tracking-wider uppercase mt-0.5">
+          Sistem Informasi • Tel-U
+        </span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links (Visible on LG and above) -->
+    <nav class="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Navigasi Utama">
+      <a href="#tentang" class="px-2.5 py-1.5 font-mono text-xs xl:text-sm font-bold text-[#0A0A0A] hover:bg-[#FFE45C] hover:border-2 hover:border-[#0A0A0A] transition-all">
+        Tentang
+      </a>
+      <a href="#telugig" class="px-2.5 py-1.5 font-mono text-xs xl:text-sm font-bold text-[#0A0A0A] hover:bg-[#FFE45C] hover:border-2 hover:border-[#0A0A0A] transition-all">
+        TelUGig <span class="bg-[#FFE45C] text-[10px] px-1 py-0.2 border border-[#0A0A0A] font-extrabold ml-0.5">JUARA 1</span>
+      </a>
+      <a href="#organisasi" class="px-2.5 py-1.5 font-mono text-xs xl:text-sm font-bold text-[#0A0A0A] hover:bg-[#FFE45C] hover:border-2 hover:border-[#0A0A0A] transition-all">
+        Organisasi
+      </a>
+      <a href="#panggung" class="px-2.5 py-1.5 font-mono text-xs xl:text-sm font-bold text-[#0A0A0A] hover:bg-[#FFE45C] hover:border-2 hover:border-[#0A0A0A] transition-all">
+        Panggung
+      </a>
+      <a href="#keahlian" class="px-2.5 py-1.5 font-mono text-xs xl:text-sm font-bold text-[#0A0A0A] hover:bg-[#FFE45C] hover:border-2 hover:border-[#0A0A0A] transition-all">
+        Keahlian
+      </a>
+      <a href="#sertifikasi" class="px-2.5 py-1.5 font-mono text-xs xl:text-sm font-bold text-[#0A0A0A] hover:bg-[#FFE45C] hover:border-2 hover:border-[#0A0A0A] transition-all">
+        Sertifikasi
+      </a>
+      <a href="#terbuka" class="px-2.5 py-1.5 font-mono text-xs xl:text-sm font-bold text-[#0A0A0A] hover:bg-[#FFE45C] hover:border-2 hover:border-[#0A0A0A] transition-all">
+        Terbuka Untuk
+      </a>
+    </nav>
+
+    <!-- Right Action CTA & Mobile Trigger -->
+    <div class="flex items-center gap-3">
+      <a
+        href="#kontak"
+        class="hidden sm:inline-flex items-center justify-center px-4 py-2 bg-[#FF3D8B] text-[#0A0A0A] font-heading font-extrabold text-sm brutal-btn"
+      >
+        Hubungi Saya ↗
+      </a>
+
+      <!-- Mobile/Tablet Menu Toggle Button (Visible below LG) -->
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        class="lg:hidden w-11 h-11 bg-[#FFE45C] border-[3px] border-[#0A0A0A] shadow-brutal-sm flex flex-col items-center justify-center gap-1.5 focus:outline-none"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span class="w-6 h-0.5 bg-[#0A0A0A] transition-transform duration-200" id="bar-1"></span>
+        <span class="w-6 h-0.5 bg-[#0A0A0A] transition-opacity duration-200" id="bar-2"></span>
+        <span class="w-6 h-0.5 bg-[#0A0A0A] transition-transform duration-200" id="bar-3"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile & Tablet Drawer Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden lg:hidden bg-[#FFE3EE] border-t-[3px] border-[#0A0A0A] px-4 pt-3 pb-6 flex flex-col gap-2 shadow-brutal-lg"
+  >
+    <a href="#tentang" class="mobile-nav-link px-3 py-2 border-2 border-[#0A0A0A] bg-white font-mono text-sm font-bold text-[#0A0A0A] shadow-brutal-sm">
+      01. Tentang Puteri
+    </a>
+    <a href="#telugig" class="mobile-nav-link px-3 py-2 border-2 border-[#0A0A0A] bg-[#FFE45C] font-mono text-sm font-bold text-[#0A0A0A] shadow-brutal-sm flex items-center justify-between">
+      <span>02. TelUGig Case Study</span>
+      <span class="bg-[#FF3D8B] text-[#0A0A0A] text-[10px] px-1.5 py-0.5 border border-[#0A0A0A] font-extrabold">JUARA 1</span>
+    </a>
+    <a href="#organisasi" class="mobile-nav-link px-3 py-2 border-2 border-[#0A0A0A] bg-white font-mono text-sm font-bold text-[#0A0A0A] shadow-brutal-sm">
+      03. Kepemimpinan & Organisasi
+    </a>
+    <a href="#panggung" class="mobile-nav-link px-3 py-2 border-2 border-[#0A0A0A] bg-white font-mono text-sm font-bold text-[#0A0A0A] shadow-brutal-sm">
+      04. Panggung & Public Speaking
+    </a>
+    <a href="#keahlian" class="mobile-nav-link px-3 py-2 border-2 border-[#0A0A0A] bg-white font-mono text-sm font-bold text-[#0A0A0A] shadow-brutal-sm">
+      05. Keahlian & Tools
+    </a>
+    <a href="#sertifikasi" class="mobile-nav-link px-3 py-2 border-2 border-[#0A0A0A] bg-white font-mono text-sm font-bold text-[#0A0A0A] shadow-brutal-sm">
+      06. Sertifikasi Google & Penghargaan
+    </a>
+    <a href="#terbuka" class="mobile-nav-link px-3 py-2 border-2 border-[#0A0A0A] bg-white font-mono text-sm font-bold text-[#0A0A0A] shadow-brutal-sm">
+      07. Terbuka Untuk Peluang
+    </a>
+    <a href="#kontak" class="mobile-nav-link mt-2 w-full text-center px-4 py-3 bg-[#FF3D8B] text-[#0A0A0A] font-heading font-extrabold text-base brutal-btn">
+      Hubungi Saya Langsung ↗
+    </a>
+  </div>
+</header>
+
+<script is:inline>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const bar1 = document.getElementById('bar-1');
+  const bar2 = document.getElementById('bar-2');
+  const bar3 = document.getElementById('bar-3');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  let isOpen = false;
+
+  function toggleMenu() {
+    isOpen = !isOpen;
+    menuBtn?.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    if (isOpen) {
+      mobileMenu?.classList.remove('hidden');
+      if (bar1 && bar2 && bar3) {
+        bar1.style.transform = 'translateY(8px) rotate(45deg)';
+        bar2.style.opacity = '0';
+        bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
+      }
+    } else {
+      mobileMenu?.classList.add('hidden');
+      if (bar1 && bar2 && bar3) {
+        bar1.style.transform = 'none';
+        bar2.style.opacity = '1';
+        bar3.style.transform = 'none';
+      }
+    }
+  }
+
+  menuBtn?.addEventListener('click', toggleMenu);
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (isOpen) toggleMenu();
+    });
+  });
+</script>

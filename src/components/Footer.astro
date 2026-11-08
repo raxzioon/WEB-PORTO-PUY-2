@@ -1,0 +1,29 @@
+---
+import { siteContent } from '../data/content';
+const currentYear = 2026;
+---
+
+<footer class="bg-[#FFE3EE] border-t-[3px] border-[#0A0A0A] py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    
+    <div class="flex items-center gap-3">
+      <span class="w-6 h-6 bg-[#FF3D8B] border-2 border-[#0A0A0A] flex items-center justify-center font-heading font-extrabold text-xs">
+        PN
+      </span>
+      <p class="font-mono text-xs font-bold text-[#0A0A0A]">
+        © {currentYear} {siteContent.personal.name}. All Rights Reserved.
+      </p>
+    </div>
+
+    <div class="flex items-center gap-4 font-mono text-xs">
+      <span class="text-[#8F0F4A] font-bold">
+        {siteContent.personal.currentCampus}
+      </span>
+      <span>•</span>
+      <a href="#top" class="font-bold underline decoration-[#FF3D8B] decoration-2 hover:bg-[#FFE45C] px-1 transition-colors">
+        Kembali ke Atas ↑
+      </a>
+    </div>
+
+  </div>
+</footer>

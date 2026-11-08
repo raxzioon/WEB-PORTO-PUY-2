@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Puteri Najma Azzahra — Business Analyst & Public Speaker",
+  description = "Portofolio profesional Puteri Najma Azzahra: Mahasiswi Sistem Informasi Telkom University dengan fokus Business Analysis, ERP/Supply Chain, dan Business Intelligence.",
+} = Astro.props;
+
+const siteUrl = "https://puterinajma.me";
+---
+
+<!doctype html>
+<html lang="id" class="bg-[#FFE3EE] text-[#0A0A0A]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content="Puteri Najma Azzahra" />
+    <meta name="keywords" content="Puteri Najma Azzahra, Business Analyst, Business Intelligence, ERP, SAP, Telkom University, Sistem Informasi, Public Speaker, BizCREATE 2026, TelUGig" />
+    <meta name="theme-color" content="#FF3D8B" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/images/puteri-najma.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="/images/puteri-najma.jpg" />
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body class="min-h-screen bg-[#FFE3EE] text-[#0A0A0A] font-body selection:bg-[#FFE45C] selection:text-[#0A0A0A] overflow-x-hidden antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#FFE45C] focus:text-[#0A0A0A] focus:border-[3px] focus:border-[#0A0A0A] focus:shadow-brutal font-mono text-sm font-bold">
+      Langsung ke Konten Utama
+    </a>
+    
+    <slot />
+  </body>
+</html>

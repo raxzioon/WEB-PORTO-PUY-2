@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import ProofStrip from '../components/ProofStrip.astro';
+import TelUGigCaseStudy from '../components/TelUGigCaseStudy.astro';
+import OrganizationSection from '../components/OrganizationSection.astro';
+import SpeakingSection from '../components/SpeakingSection.astro';
+import SkillsSection from '../components/SkillsSection.astro';
+import CertificatesSection from '../components/CertificatesSection.astro';
+import EducationSection from '../components/EducationSection.astro';
+import OpenForSection from '../components/OpenForSection.astro';
+import TestimonialSection from '../components/TestimonialSection.astro';
+import ContactSection from '../components/ContactSection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <div id="top" class="min-h-screen flex flex-col">
+    <Navbar />
+    
+    <main id="main-content" class="flex-grow">
+      <Hero />
+      <ProofStrip />
+      <TelUGigCaseStudy />
+      <OrganizationSection />
+      <SpeakingSection />
+      <SkillsSection />
+      <CertificatesSection />
+      <EducationSection />
+      <OpenForSection />
+      <TestimonialSection />
+      <ContactSection />
+    </main>
+
+    <Footer />
+  </div>
+</Layout>

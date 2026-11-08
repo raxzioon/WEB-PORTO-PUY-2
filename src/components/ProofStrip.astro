@@ -1,0 +1,93 @@
+---
+import { siteContent } from '../data/content';
+---
+
+<section class="border-b-[3px] border-[#0A0A0A] bg-[#FFE45C] overflow-hidden">
+  
+  <!-- Running Brutalist Ticker -->
+  <div class="py-2.5 bg-[#FFE45C] border-b-[3px] border-[#0A0A0A] overflow-hidden whitespace-nowrap flex select-none">
+    <div class="inline-flex items-center gap-8 font-mono text-sm sm:text-base font-extrabold uppercase tracking-wider text-[#0A0A0A] animate-marquee">
+      <span>★ JUARA 1 BIZCREATE 2026</span>
+      <span>•</span>
+      <span>GOOGLE BUSINESS INTELLIGENCE CERTIFIED</span>
+      <span>•</span>
+      <span>HR GOOGLE DEVELOPER ON CAMPUS</span>
+      <span>•</span>
+      <span>GOOGLE AI CERTIFIED</span>
+      <span>•</span>
+      <span>SILVER DIPLOMA TINGKAT NASIONAL (SKOR 72.93)</span>
+      <span>•</span>
+      <span>SEKOLAH PASAR MODAL IDX</span>
+      <span>•</span>
+      <span>S1 SISTEM INFORMASI TELKOM UNIVERSITY</span>
+      <span>•</span>
+      <span>DMT STAFF PKKMB 2026</span>
+      <span>•</span>
+    </div>
+    <div class="inline-flex items-center gap-8 font-mono text-sm sm:text-base font-extrabold uppercase tracking-wider text-[#0A0A0A] animate-marquee" aria-hidden="true">
+      <span>★ JUARA 1 BIZCREATE 2026</span>
+      <span>•</span>
+      <span>GOOGLE BUSINESS INTELLIGENCE CERTIFIED</span>
+      <span>•</span>
+      <span>HR GOOGLE DEVELOPER ON CAMPUS</span>
+      <span>•</span>
+      <span>GOOGLE AI CERTIFIED</span>
+      <span>•</span>
+      <span>SILVER DIPLOMA TINGKAT NASIONAL (SKOR 72.93)</span>
+      <span>•</span>
+      <span>SEKOLAH PASAR MODAL IDX</span>
+      <span>•</span>
+      <span>S1 SISTEM INFORMASI TELKOM UNIVERSITY</span>
+      <span>•</span>
+      <span>DMT STAFF PKKMB 2026</span>
+      <span>•</span>
+    </div>
+  </div>
+
+  <!-- 4 Hard Fact Metric Cards -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      {siteContent.proofFacts.map((fact, index) => (
+        <div class="bg-white border-[3px] border-[#0A0A0A] p-5 shadow-brutal flex flex-col justify-between relative group hover:translate-x-1 hover:translate-y-1 hover:shadow-brutal-sm transition-all duration-150">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 bg-[#FF3D8B] text-[#0A0A0A] font-mono text-[11px] font-extrabold border border-[#0A0A0A]">
+                {fact.badge}
+              </span>
+              <span class="font-mono text-xs font-bold text-[#8F0F4A]">
+                0{index + 1}
+              </span>
+            </div>
+            <h3 class="font-heading font-extrabold text-xl text-[#0A0A0A] mb-2 leading-tight">
+              {fact.title}
+            </h3>
+            <p class="font-body text-xs sm:text-sm text-[#0A0A0A]/85 leading-relaxed">
+              {fact.subtitle}
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between font-mono text-[11px] font-bold text-[#0A0A0A]">
+            <span>KATEGORI:</span>
+            <span class="bg-[#FFE45C] px-1.5 py-0.5 border border-[#0A0A0A]">{fact.tag}</span>
+          </div>
+        </div>
+      ))}
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 28s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee {
+      animation: none;
+    }
+  }
+</style>

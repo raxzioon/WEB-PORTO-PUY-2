@@ -1,0 +1,126 @@
+---
+import { siteContent } from '../data/content';
+---
+
+<section id="tentang" class="relative pt-12 pb-16 md:pt-20 md:pb-24 border-b-[3px] border-[#0A0A0A] bg-[#FFE3EE]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      
+      <!-- Left Column: Copy & CTAs -->
+      <div class="lg:col-span-7 flex flex-col items-start">
+        
+        <!-- Identity Pill -->
+        <div class="inline-flex items-start sm:items-center gap-2.5 px-3 py-1.5 bg-white border-[3px] border-[#0A0A0A] shadow-brutal-sm mb-6">
+          <span class="w-2.5 h-2.5 bg-[#FF3D8B] rounded-full border border-[#0A0A0A] flex-shrink-0 mt-1 sm:mt-0"></span>
+          <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#0A0A0A]">
+            Puteri Najma Azzahra • S1 Sistem Informasi Telkom University
+          </span>
+        </div>
+
+        <!-- Hero Headline -->
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[#0A0A0A] leading-[1.08] tracking-tight mb-6">
+          DATA JADI KEPUTUSAN.<br/>
+          <span class="bg-[#FFE45C] px-1 border-b-4 border-[#0A0A0A]">RAPAT JADI HASIL.</span><br/>
+          PROSES JADI RAPI.
+        </h1>
+
+        <!-- Supporting Narrative -->
+        <p class="font-body text-base sm:text-lg text-[#0A0A0A] max-w-2xl leading-relaxed mb-8">
+          Saya menghubungkan <strong class="underline decoration-[#FF3D8B] decoration-2">analisis proses bisnis</strong>, 
+          pemahaman <strong class="underline decoration-[#FF3D8B] decoration-2">ERP & rantai pasok</strong>, 
+          serta <strong class="underline decoration-[#FF3D8B] decoration-2">Business Intelligence</strong> untuk menyelesaikan masalah nyata. 
+          Saya nyaman memimpin dinamika tim di ruang rapat dan terbiasa berbicara di hadapan publik dengan komunikasi yang asertif.
+        </p>
+
+        <!-- Double Action CTA -->
+        <div class="w-full sm:w-auto flex flex-col sm:flex-row gap-4 mb-8">
+          <a
+            href="#telugig"
+            class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#FFE45C] text-[#0A0A0A] font-heading font-extrabold text-base brutal-btn text-center"
+          >
+            <span>Bedah Studi Kasus TelUGig</span>
+            <span class="text-sm px-1.5 py-0.5 bg-[#FF3D8B] text-[#0A0A0A] border border-[#0A0A0A] font-mono font-bold">JUARA 1</span>
+            <span>→</span>
+          </a>
+          <a
+            href="#kontak"
+            class="inline-flex items-center justify-center px-6 py-4 bg-[#FF3D8B] text-[#0A0A0A] font-heading font-extrabold text-base brutal-btn text-center"
+          >
+            Hubungi Saya untuk Kolaborasi / Magang ↗
+          </a>
+        </div>
+
+        <!-- Quick Tags -->
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t-2 border-[#0A0A0A]/20 w-full">
+          <span class="font-mono text-xs font-bold text-[#8F0F4A]">FOKUS KARIER:</span>
+          <span class="px-2 py-0.5 bg-white border border-[#0A0A0A] font-mono text-xs font-semibold">Business Analysis</span>
+          <span class="px-2 py-0.5 bg-white border border-[#0A0A0A] font-mono text-xs font-semibold">ERP & Supply Chain</span>
+          <span class="px-2 py-0.5 bg-white border border-[#0A0A0A] font-mono text-xs font-semibold">Business Intelligence</span>
+          <span class="px-2 py-0.5 bg-white border border-[#0A0A0A] font-mono text-xs font-semibold">Public Speaker / MC</span>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Visual Portrait with Brutalist Pink Backing Block -->
+      <div class="lg:col-span-5 flex justify-center lg:justify-end">
+        <div class="relative w-full max-w-sm sm:max-w-md">
+          
+          <!-- Pink Offset Backing Block -->
+          <div class="absolute inset-0 bg-[#FF3D8B] border-[3px] border-[#0A0A0A] translate-x-4 translate-y-4"></div>
+          
+          <!-- Image Card -->
+          <div class="relative bg-white border-[3px] border-[#0A0A0A] overflow-hidden">
+            <!-- Header bar of the image frame -->
+            <div class="h-8 bg-[#FFE45C] border-b-[3px] border-[#0A0A0A] px-3 flex items-center justify-between font-mono text-xs font-bold">
+              <span>PUTERI_NAJMA_AZZAHRA.JPG</span>
+              <span class="flex items-center gap-1">
+                <span class="w-2.5 h-2.5 bg-[#FF3D8B] border border-[#0A0A0A]"></span>
+                <span class="w-2.5 h-2.5 bg-[#0A0A0A]"></span>
+              </span>
+            </div>
+
+            <!-- Authentic Photo -->
+            <div class="aspect-[3/4] overflow-hidden bg-[#FFE3EE] flex items-center justify-center">
+              <img
+                src={siteContent.personal.avatarUrl}
+                alt="Foto Profil Profesional Puteri Najma Azzahra"
+                class="w-full h-full object-cover object-top filter contrast-[1.03]"
+                width="450"
+                height="600"
+                loading="eager"
+              />
+            </div>
+
+            <!-- Footer caption of the image frame -->
+            <div class="p-3 bg-white border-t-[3px] border-[#0A0A0A] flex items-center justify-between font-mono text-xs">
+              <span class="font-bold text-[#0A0A0A]">Telkom University</span>
+              <span class="text-[#8F0F4A] font-bold">102022500371</span>
+            </div>
+          </div>
+
+          <!-- Tilted Brutalist Sticker #1: Juara 1 BizCREATE -->
+          <div class="absolute -top-4 -left-4 sm:-left-6 -rotate-6 bg-[#FFE45C] text-[#0A0A0A] border-[3px] border-[#0A0A0A] shadow-brutal px-3.5 py-1.5 z-10">
+            <p class="font-heading font-extrabold text-xs sm:text-sm tracking-tight leading-none uppercase">
+              ★ JUARA 1 BIZCREATE 2026
+            </p>
+            <p class="font-mono text-[10px] font-bold text-[#8F0F4A] mt-0.5">
+              Business Plan Competition
+            </p>
+          </div>
+
+          <!-- Tilted Brutalist Sticker #2: 3x Google Certified -->
+          <div class="absolute -bottom-4 -right-2 sm:-right-4 rotate-3 bg-[#FF3D8B] text-[#0A0A0A] border-[3px] border-[#0A0A0A] shadow-brutal px-3.5 py-2 z-10">
+            <p class="font-heading font-extrabold text-xs sm:text-sm tracking-tight leading-none uppercase">
+              3x GOOGLE CERTIFIED
+            </p>
+            <p class="font-mono text-[10px] font-bold mt-0.5">
+              BI • AI • Stakeholder
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

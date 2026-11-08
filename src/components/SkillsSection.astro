@@ -1,0 +1,83 @@
+---
+import { siteContent } from '../data/content';
+---
+
+<section id="keahlian" class="py-16 md:py-24 border-b-[3px] border-[#0A0A0A] bg-[#FFE3EE]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Title Bar -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 pb-6 border-b-[3px] border-[#0A0A0A]">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FF3D8B] text-[#0A0A0A] border-2 border-[#0A0A0A] font-mono text-xs font-extrabold uppercase mb-2">
+          <span>KOMPETENSI TERUJI (BEBAS KLAIM PALSU)</span>
+        </div>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#0A0A0A] tracking-tight">
+          KEAHLIAN & ALAT KERJA
+        </h2>
+      </div>
+      <p class="font-mono text-xs sm:text-sm text-[#8F0F4A] font-bold max-w-md bg-white p-3 border-2 border-[#0A0A0A] shadow-brutal-sm">
+        Tanpa persentase fiktif "90% SQL" atau "85% Python". Seluruh poin di bawah ditopang oleh sertifikat resmi, tugas perkuliahan, dan keterlibatan organisasi nyata.
+      </p>
+    </div>
+
+    <!-- Grouped Skills Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      {siteContent.skillCategories.map((cat, index) => (
+        <div class="bg-white border-[3px] border-[#0A0A0A] p-6 shadow-brutal flex flex-col justify-between hover:translate-x-1 hover:translate-y-1 hover:shadow-brutal-sm transition-all duration-150">
+          
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-mono text-xs font-extrabold bg-[#FFE45C] px-2 py-0.5 border border-[#0A0A0A]">
+                GRUP 0{index + 1}
+              </span>
+              <span class="w-3 h-3 bg-[#FF3D8B] border border-[#0A0A0A]"></span>
+            </div>
+
+            <h3 class="font-heading font-extrabold text-xl text-[#0A0A0A] mb-2 leading-tight">
+              {cat.category}
+            </h3>
+
+            <p class="font-body text-xs sm:text-sm text-[#0A0A0A]/80 leading-relaxed mb-5">
+              {cat.description}
+            </p>
+
+            <!-- Pills -->
+            <div class="flex flex-wrap gap-2">
+              {cat.skills.map((skill) => (
+                <span class="px-2.5 py-1 bg-[#FFE3EE] border-2 border-[#0A0A0A] font-mono text-xs font-bold text-[#0A0A0A] shadow-[2px_2px_0px_#0A0A0A]">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 border-t-2 border-[#0A0A0A]/10 font-mono text-[11px] text-[#8F0F4A] font-bold">
+            ✓ Terverifikasi via CV & Portofolio
+          </div>
+
+        </div>
+      ))}
+
+      <!-- Special Notice Card: Filter Integritas -->
+      <div class="bg-[#FFE45C] border-[3px] border-[#0A0A0A] p-6 shadow-brutal flex flex-col justify-between">
+        <div>
+          <div class="font-mono text-xs font-extrabold bg-[#0A0A0A] text-[#FFE45C] px-2 py-0.5 inline-block mb-3">
+            CATATAN INTEGRITAS DATA
+          </div>
+          <h3 class="font-heading font-extrabold text-xl text-[#0A0A0A] mb-2">
+            Skill yang Sengaja Dieliminasi
+          </h3>
+          <p class="font-body text-xs sm:text-sm text-[#0A0A0A] leading-relaxed mb-4">
+            Pada PDF lama halaman 3 terdapat logo Laravel, Livewire, Tailwind, dan MySQL. Karena skill tersebut tidak tercantum di CV ATS resmi Puteri dan teridentifikasi sebagai sisa template grafis, situs ini <strong>menghilangkannya sepenuhnya</strong> demi menjaga kepercayaan recruiter.
+          </p>
+        </div>
+        <div class="p-2.5 bg-white border-2 border-[#0A0A0A] font-mono text-[11px] font-bold text-[#8F0F4A]">
+          Lihat audit lengkap di TODO.md
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

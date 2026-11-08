@@ -1,0 +1,37 @@
+---
+import { siteContent } from '../data/content';
+const { enabled, items } = siteContent.testimonials;
+---
+
+{enabled && (
+  <section id="testimoni" class="py-16 md:py-24 border-b-[3px] border-[#0A0A0A] bg-[#FFE45C]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 pb-6 border-b-[3px] border-[#0A0A0A]">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#0A0A0A] text-[#FFE45C] border-2 border-[#0A0A0A] font-mono text-xs font-extrabold uppercase mb-2">
+            <span>VALIDASI PIHAK KETIGA</span>
+          </div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#0A0A0A] tracking-tight">
+            TESTIMONI & REKOMENDASI
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {items.map((t) => (
+          <div class="bg-white border-[3px] border-[#0A0A0A] p-6 sm:p-8 shadow-brutal flex flex-col justify-between">
+            <blockquote class="font-body text-base text-[#0A0A0A] italic mb-6 leading-relaxed">
+              "{t.quote}"
+            </blockquote>
+            <div class="pt-4 border-t-2 border-[#0A0A0A]/10 font-mono text-xs">
+              <p class="font-heading font-extrabold text-sm text-[#0A0A0A] not-italic">{t.author}</p>
+              <p class="text-[#8F0F4A]">{t.role} • {t.organization}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+)}

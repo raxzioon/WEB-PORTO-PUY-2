@@ -1,0 +1,99 @@
+---
+import { siteContent } from '../data/content';
+---
+
+<section id="sertifikasi" class="py-16 md:py-24 border-b-[3px] border-[#0A0A0A] bg-[#FFE3EE]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Title Bar -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 pb-6 border-b-[3px] border-[#0A0A0A]">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FFE45C] text-[#0A0A0A] border-2 border-[#0A0A0A] font-mono text-xs font-extrabold uppercase mb-2">
+          <span>KREDENSIAL & PENGHARGAAN RESMI</span>
+        </div>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#0A0A0A] tracking-tight">
+          SERTIFIKASI & PRESTASI
+        </h2>
+      </div>
+      <p class="font-mono text-xs sm:text-sm text-[#8F0F4A] font-bold max-w-md bg-white p-3 border-2 border-[#0A0A0A] shadow-brutal-sm">
+        Bukti kompetensi berstandar industri dari Google Career Certificates, Bursa Efek Indonesia, dan dewan juri kompetisi.
+      </p>
+    </div>
+
+    <!-- Certificates Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      {siteContent.certificates.map((cert) => (
+        <div class="bg-white border-[3px] border-[#0A0A0A] shadow-brutal flex flex-col justify-between overflow-hidden group hover:translate-x-1 hover:translate-y-1 hover:shadow-brutal-sm transition-all duration-150">
+          
+          <div>
+            <!-- Top bar with badge -->
+            <div class="px-4 py-2 bg-[#FFE45C] border-b-[3px] border-[#0A0A0A] flex items-center justify-between font-mono text-xs font-extrabold text-[#0A0A0A]">
+              <span>{cert.badge}</span>
+              <span class="text-[#8F0F4A] font-bold">{cert.date}</span>
+            </div>
+
+            <!-- Thumbnail Image (if available) -->
+            {cert.imageUrl ? (
+              <div class="aspect-[16/10] bg-neutral-100 border-b-[3px] border-[#0A0A0A] overflow-hidden flex items-center justify-center p-2 group-hover:bg-[#FFE3EE] transition-colors">
+                <img
+                  src={cert.imageUrl}
+                  alt={`Sertifikat ${cert.title}`}
+                  class="w-full h-full object-contain filter contrast-[1.02]"
+                  loading="lazy"
+                />
+              </div>
+            ) : (
+              <div class="aspect-[16/10] bg-[#FFE3EE] border-b-[3px] border-[#0A0A0A] flex flex-col items-center justify-center p-4 text-center">
+                <span class="w-10 h-10 bg-[#FF3D8B] border-2 border-[#0A0A0A] flex items-center justify-center font-heading font-extrabold text-base mb-2 shadow-brutal-sm">
+                  G
+                </span>
+                <span class="font-mono text-xs font-bold text-[#0A0A0A]">
+                  GOOGLE CAREER CERTIFICATES
+                </span>
+                <span class="font-mono text-[11px] text-[#8F0F4A] mt-1">
+                  Kredensial Resmi Coursera
+                </span>
+              </div>
+            )}
+
+            <!-- Certificate Details -->
+            <div class="p-5">
+              <h3 class="font-heading font-extrabold text-lg sm:text-xl text-[#0A0A0A] mb-2 leading-snug">
+                {cert.title}
+              </h3>
+              <p class="font-mono text-xs font-bold text-[#8F0F4A] mb-3">
+                Penerbit: {cert.issuer}
+              </p>
+            </div>
+          </div>
+
+          <!-- Bottom Action / Verification Link -->
+          <div class="p-4 bg-neutral-50 border-t-2 border-[#0A0A0A] flex items-center justify-between">
+            {cert.credentialUrl ? (
+              <a
+                href={cert.credentialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#FF3D8B] text-[#0A0A0A] font-mono text-xs font-extrabold border-2 border-[#0A0A0A] shadow-brutal-sm hover:bg-[#FFE45C] transition-colors"
+              >
+                <span>Verifikasi Coursera</span>
+                <span>↗</span>
+              </a>
+            ) : (
+              <span class="font-mono text-xs font-bold text-[#0A0A0A]/70">
+                Terarsip dalam Portofolio
+              </span>
+            )}
+            <span class="font-mono text-[11px] font-bold text-[#8F0F4A]">
+              ✓ Terverifikasi
+            </span>
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
