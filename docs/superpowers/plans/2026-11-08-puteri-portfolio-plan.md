@@ -50,7 +50,7 @@ Halaman utama dirancang sebagai satu halaman vertikal terpadu (*single-page with
      4. **Dorm Team Asrama Telkom University** (Penerima Sertifikat Penghargaan): Bertanggung jawab atas kehidupan asrama kampus `[ISI: detail peran dan kontribusi operasional]`.
 
 6. **Panggung & Komunikasi Publik (`#panggung`)**:
-   - **MC & Pembicara Sosialisasi Sekolah**: Memandu jalannya sosialisasi di berbagai SMP se-Jakarta Timur, menyampaikan materi edukatif secara interaktif dan menarik minat ratusan siswa.
+   - **MC & Pembicara Sosialisasi Sekolah**: Memandu jalannya sosialisasi di berbagai SMP di Jakarta Selatan, menyampaikan materi edukatif secara interaktif dan menarik minat ratusan siswa.
    - **Seni Pertunjukan & Paduan Suara**: Peraih Silver Diploma di The 3rd Jakarta National Choir Competition bersama Arkasvara 14 SMAN 14 Jakarta (Skor nasional: 72.93).
    - Slot Dokumentasi Lapangan: Placeholder `[ISI: Foto/Video dokumentasi kegiatan MC & panggung]`.
 

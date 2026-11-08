@@ -26,7 +26,7 @@ Website portofolio personal dengan estetika **Neo-Brutalism Pink Editorial** yan
 3. **Strip Bukti Nyata (Proof Strip):** Ticker berjalan brutalist dan 4 kartu metrik keras (BizCREATE, 3x Google Certified, HR GDG, Silver Diploma).
 4. **Studi Kasus TelUGig (Karya Utama Juara 1):** Rincian masalah, solusi B2B, foto dokumentasi panggung, foto sertifikat resmi, dan **Diagram Alur Uang Murni CSS Brutalist** (UMKM → Escrow DP → Mahasiswa 100% Zero-Fee & Platform 15%).
 5. **Kepemimpinan & Organisasi:** Kartu rekam jejak peran di Google Developer on Campus (HR), PKKMB 2026 (Motivation & Discipline Team), Sekretaris Tim Basket Putri, dan Dorm Team Asrama.
-6. **Panggung & Public Speaking:** Blok pembeda utama analis yang bisa pegang mic — MC sosialisasi SMP se-Jakarta Timur dan prestasi Silver Diploma Paduan Suara Nasional (Arkasvara 14).
+6. **Panggung & Public Speaking:** Blok pembeda utama analis yang bisa pegang mic — MC sosialisasi SMP di Jakarta Selatan dan prestasi Silver Diploma Paduan Suara Nasional (Arkasvara 14).
 7. **Keahlian Terverifikasi:** Dikelompokkan rapi (Bisnis & Analitik, BI & Data, Rantai Pasok/ERP, AI Terapan & Produktivitas, Komunikasi & Negosiasi) tanpa persentase fiktif.
 8. **Sertifikasi & Penghargaan:** Galeri sertifikat resmi beresolusi tinggi dengan link verifikasi kredensial Google/Coursera langsung.
 9. **Riwayat Pendidikan:** Jalur akademik Telkom University S1 Sistem Informasi, SMAN 14 Jakarta, dan SMP Al Masoem Bandung.
