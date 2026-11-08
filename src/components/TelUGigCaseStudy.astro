@@ -140,95 +140,172 @@ const project = siteContent.telUGig;
 
     <!-- PURE CSS BRUTALIST MONEY FLOW DIAGRAM -->
     <div class="bg-white border-[3px] border-[#0A0A0A] p-6 sm:p-8 shadow-brutal-lg">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 pb-4 border-b-2 border-[#0A0A0A]">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-8 pb-4 border-b-2 border-[#0A0A0A]">
         <div>
           <span class="font-mono text-xs font-extrabold text-[#8F0F4A] tracking-wider uppercase block">
             DIAGRAM ARSITEKTUR BISNIS & ALUR DANA
           </span>
-          <h3 class="font-heading font-extrabold text-2xl text-[#0A0A0A]">
+          <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-[#0A0A0A]">
             Mekanisme Transaksi & Keuangan TelUGig (Escrow + Fee Split)
           </h3>
         </div>
-        <span class="font-mono text-xs font-bold bg-[#FFE3EE] border-2 border-[#0A0A0A] px-3 py-1 self-start sm:self-auto">
+        <span class="font-mono text-xs font-bold bg-[#FFE3EE] border-2 border-[#0A0A0A] px-3 py-1 self-start sm:self-auto shadow-brutal-sm">
           Murni CSS Brutalist
         </span>
       </div>
 
-      <!-- Diagram Flow Blocks -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+      <!-- Responsive Balanced Flow Architecture (Flexbox on Desktop) -->
+      <div class="flex flex-col lg:flex-row items-stretch gap-3 xl:gap-4">
         
-        <!-- Step 1: UMKM Klien -->
-        <div class="bg-[#FFE3EE] border-[3px] border-[#0A0A0A] p-4 shadow-brutal-sm flex flex-col justify-between h-full">
+        <!-- STEP 01: UMKM Klien -->
+        <div class="flex-1 min-w-0 bg-[#FFE3EE] border-[3px] border-[#0A0A0A] p-5 shadow-brutal-sm flex flex-col justify-between">
           <div>
-            <div class="font-mono text-[11px] font-extrabold bg-[#0A0A0A] text-white px-2 py-0.5 inline-block mb-2">
-              PIHAK 01: KLIEN
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-mono text-[10px] font-extrabold bg-[#0A0A0A] text-white px-2 py-0.5">
+                PIHAK 01: KLIEN
+              </span>
+              <span class="w-2.5 h-2.5 bg-[#FF3D8B] border border-[#0A0A0A]"></span>
             </div>
-            <h4 class="font-heading font-extrabold text-lg text-[#0A0A0A] mb-1">
+            <h4 class="font-heading font-extrabold text-xl text-[#0A0A0A] mb-1">
               UMKM Bojongsoang
             </h4>
+            <p class="font-mono text-xs font-bold text-[#8F0F4A] mb-3">
+              Pemberi Kerja & Pemesan Jasa
+            </p>
             <p class="font-body text-xs text-[#0A0A0A] leading-relaxed">
-              Membutuhkan digitalisasi (branding, katalog, web, medsos). Menyetor nilai proyek + fee ke sistem penjamin.
+              Membutuhkan digitalisasi operasional (branding visual, katalog produk, media sosial, dan landing page).
             </p>
           </div>
-          <div class="mt-4 pt-2 border-t border-[#0A0A0A] font-mono text-[11px] font-bold text-[#8F0F4A]">
-            Setor: 100% Honor + 15% Fee
-          </div>
-        </div>
 
-        <!-- Connector Arrow 1 -->
-        <div class="flex flex-col items-center justify-center py-2 md:py-0">
-          <div class="w-full flex items-center justify-center">
-            <span class="font-mono text-xs font-extrabold bg-[#FFE45C] border-2 border-[#0A0A0A] px-2 py-1 shadow-brutal-sm text-center">
-              Mandatory DP →
+          <div class="mt-4 pt-3 border-t-2 border-[#0A0A0A]/20 bg-white border-2 border-[#0A0A0A] p-3">
+            <span class="font-mono text-[10px] font-extrabold text-[#8F0F4A] block uppercase">
+              KOMITMEN PEMBAYARAN:
+            </span>
+            <span class="font-heading font-extrabold text-sm text-[#0A0A0A] block">
+              100% Honor + 15% Success Fee
+            </span>
+            <span class="font-mono text-[11px] text-[#0A0A0A]/80 block mt-0.5">
+              Disetor di awal via sistem
             </span>
           </div>
         </div>
 
-        <!-- Step 2: Escrow Core -->
-        <div class="bg-[#FFE45C] border-[3px] border-[#0A0A0A] p-4 shadow-brutal flex flex-col justify-between h-full relative">
-          <div class="absolute -top-3 right-3 bg-[#FF3D8B] text-[#0A0A0A] border border-[#0A0A0A] font-mono text-[10px] font-extrabold px-1.5 py-0.2">
-            PUSAT PENJAMIN
+        <!-- CONNECTOR 01: Mandatory DP -->
+        <div class="flex lg:flex-col items-center justify-center gap-2 py-1 lg:py-0 shrink-0">
+          <div class="bg-[#FFE45C] border-[3px] border-[#0A0A0A] px-3.5 py-2.5 shadow-brutal-sm text-center whitespace-nowrap">
+            <span class="font-mono text-[9px] font-extrabold text-[#8F0F4A] uppercase block">
+              ALUR 01
+            </span>
+            <span class="font-heading font-extrabold text-xs sm:text-sm text-[#0A0A0A] block leading-tight">
+              MANDATORY DP
+            </span>
+            <span class="font-mono text-[10px] font-bold text-[#0A0A0A] block mt-0.5">
+              Uang Muka Wajib
+            </span>
           </div>
-          <div>
-            <div class="font-mono text-[11px] font-extrabold bg-[#0A0A0A] text-[#FFE45C] px-2 py-0.5 inline-block mb-2">
-              SISTEM TELUGIG
-            </div>
-            <h4 class="font-heading font-extrabold text-lg text-[#0A0A0A] mb-1">
-              Rekening Escrow Kampus
-            </h4>
-            <p class="font-body text-xs text-[#0A0A0A] leading-relaxed">
-              Mengunci dana di muka untuk mencegah pembatalan sepihak dan memastikan mahasiswa menerima haknya setelah deliverables lolos verifikasi.
-            </p>
-          </div>
-          <div class="mt-4 pt-2 border-t border-[#0A0A0A] font-mono text-[11px] font-bold text-[#0A0A0A]">
-            Verifikasi & Validasi Output
+          <div class="flex items-center justify-center font-heading font-black text-xl text-[#0A0A0A]">
+            <span class="lg:hidden">↓</span>
+            <span class="hidden lg:inline text-2xl leading-none">➔</span>
           </div>
         </div>
 
-        <!-- Step 3: Dual Disbursement -->
-        <div class="flex flex-col gap-3">
-          
-          <!-- Student Zero Fee -->
-          <div class="bg-[#FF3D8B] border-[3px] border-[#0A0A0A] p-3 shadow-brutal-sm text-[#0A0A0A]">
-            <div class="flex items-center justify-between">
-              <span class="font-mono text-[10px] font-extrabold uppercase bg-white px-1 border border-[#0A0A0A]">MAHASISWA</span>
-              <span class="font-mono text-xs font-extrabold">100% UTUH</span>
+        <!-- STEP 02: Pusat Penjamin / Escrow -->
+        <div class="flex-1 min-w-0 bg-[#FFE45C] border-[3px] border-[#0A0A0A] p-5 shadow-brutal flex flex-col justify-between relative">
+          <div class="absolute -top-3.5 right-4 bg-[#FF3D8B] text-[#0A0A0A] border-2 border-[#0A0A0A] font-mono text-[10px] font-extrabold px-2 py-0.5 shadow-brutal-sm">
+            CORE TELUGIG
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-mono text-[10px] font-extrabold bg-[#0A0A0A] text-[#FFE45C] px-2 py-0.5">
+                PUSAT PENJAMIN
+              </span>
             </div>
-            <h5 class="font-heading font-extrabold text-sm mt-1">Talenta Freelancer</h5>
-            <p class="font-body text-[11px] leading-tight mt-1 text-[#0A0A0A]">
-              Menerima seluruh honor proyek tanpa potongan biaya komisi platform.
+            <h4 class="font-heading font-extrabold text-xl text-[#0A0A0A] mb-1">
+              Rekening Escrow Kampus
+            </h4>
+            <p class="font-mono text-xs font-bold text-[#8F0F4A] mb-3">
+              Sistem Pengaman Transaksi
+            </p>
+            <p class="font-body text-xs text-[#0A0A0A] leading-relaxed mb-3">
+              Mengunci dana <strong>Mandatory DP</strong> sebelum pekerjaan dimulai. Mencegah pembatalan sepihak dan menjamin hak mahasiswa dibayar penuh.
+            </p>
+            <div class="space-y-1.5 font-mono text-[11px] text-[#0A0A0A] pt-1">
+              <div class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>
+                <span>Anti-Ghosting: Klien terikat komitmen</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>
+                <span>Quality Gate: Verifikasi hasil kerja</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t-2 border-[#0A0A0A]/20 bg-white border-2 border-[#0A0A0A] p-3">
+            <span class="font-mono text-[10px] font-extrabold text-[#0A0A0A] block uppercase">
+              STATUS DANA ESCROW:
+            </span>
+            <span class="font-heading font-extrabold text-sm text-[#8F0F4A] block">
+              Terkunci Aman Hingga Approval
+            </span>
+          </div>
+        </div>
+
+        <!-- CONNECTOR 02: Output Verification & Release -->
+        <div class="flex lg:flex-col items-center justify-center gap-2 py-1 lg:py-0 shrink-0">
+          <div class="bg-[#FFE3EE] border-[3px] border-[#0A0A0A] px-3.5 py-2.5 shadow-brutal-sm text-center whitespace-nowrap">
+            <span class="font-mono text-[9px] font-extrabold text-[#8F0F4A] uppercase block">
+              ALUR 02
+            </span>
+            <span class="font-heading font-extrabold text-xs sm:text-sm text-[#0A0A0A] block leading-tight">
+              HASIL LOLOS
+            </span>
+            <span class="font-mono text-[10px] font-bold text-[#0A0A0A] block mt-0.5">
+              Pencairan Split
+            </span>
+          </div>
+          <div class="flex items-center justify-center font-heading font-black text-xl text-[#0A0A0A]">
+            <span class="lg:hidden">↓</span>
+            <span class="hidden lg:inline text-2xl leading-none">➔</span>
+          </div>
+        </div>
+
+        <!-- STEP 03: Dual Disbursement -->
+        <div class="flex-1 min-w-0 flex flex-col gap-3 justify-between">
+          
+          <!-- Student 100% Zero-Fee -->
+          <div class="bg-[#FF3D8B] border-[3px] border-[#0A0A0A] p-4 shadow-brutal-sm text-[#0A0A0A] flex-1">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-mono text-[10px] font-extrabold uppercase bg-white px-1.5 py-0.5 border border-[#0A0A0A]">
+                MAHASISWA
+              </span>
+              <span class="font-heading font-extrabold text-sm bg-[#FFE45C] px-1.5 border border-[#0A0A0A]">
+                100% UTUH
+              </span>
+            </div>
+            <h5 class="font-heading font-extrabold text-base mt-2">
+              Talenta Freelancer Kampus
+            </h5>
+            <p class="font-body text-xs leading-relaxed mt-1 text-[#0A0A0A]">
+              Menerima seluruh honor kerja tanpa potongan komisi (Zero-Fee Policy).
             </p>
           </div>
 
           <!-- Platform 15% Client Fee -->
-          <div class="bg-white border-[3px] border-[#0A0A0A] p-3 shadow-brutal-sm">
-            <div class="flex items-center justify-between">
-              <span class="font-mono text-[10px] font-extrabold uppercase bg-[#FFE45C] px-1 border border-[#0A0A0A]">PLATFORM</span>
-              <span class="font-mono text-xs font-extrabold text-[#8F0F4A]">15% FEE</span>
+          <div class="bg-white border-[3px] border-[#0A0A0A] p-4 shadow-brutal-sm flex-1">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-mono text-[10px] font-extrabold uppercase bg-[#FFE45C] px-1.5 py-0.5 border border-[#0A0A0A]">
+                PLATFORM
+              </span>
+              <span class="font-heading font-extrabold text-sm text-[#8F0F4A] bg-[#FFE3EE] px-1.5 border border-[#0A0A0A]">
+                15% FEE
+              </span>
             </div>
-            <h5 class="font-heading font-extrabold text-sm mt-1">Kas Operasional TelUGig</h5>
-            <p class="font-body text-[11px] leading-tight mt-1 text-[#0A0A0A]">
-              Menutupi biaya pemeliharaan server, kurasi talenta, dan garansi penyelesaian.
+            <h5 class="font-heading font-extrabold text-base mt-2">
+              Kas Operasional TelUGig
+            </h5>
+            <p class="font-body text-xs leading-relaxed mt-1 text-[#0A0A0A]">
+              Biaya dibebankan ke UMKM untuk penjaminan kualitas, verifikasi, & server.
             </p>
           </div>
 
@@ -237,12 +314,12 @@ const project = siteContent.telUGig;
       </div>
 
       <!-- Diagram Summary Note -->
-      <div class="mt-6 p-4 bg-[#FFE3EE] border-2 border-[#0A0A0A] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 font-mono text-xs">
+      <div class="mt-8 p-4 bg-[#FFE45C] border-[3px] border-[#0A0A0A] shadow-brutal-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 font-mono text-xs">
         <span class="font-bold text-[#0A0A0A]">
-          💡 Dampak Ekonomi: Mahasiswa mendapatkan portofolio & penghasilan riil, UMKM terlindungi dari risiko gagal serah.
+          💡 Dampak Nyata Model TelUGig: Mahasiswa aman berkarya dengan honor 100% terlindungi, UMKM terlindungi dari risiko gagal serah berkat Mandatory DP & Escrow.
         </span>
-        <span class="text-[#8F0F4A] font-extrabold">
-          Karya Teruji di Hadapan Juri FKS Tel-U 2026
+        <span class="text-[#8F0F4A] font-extrabold whitespace-nowrap bg-white px-2 py-1 border border-[#0A0A0A]">
+          Juara 1 BizCREATE 2026
         </span>
       </div>
 
