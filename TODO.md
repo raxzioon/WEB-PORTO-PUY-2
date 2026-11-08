@@ -39,7 +39,7 @@ Berikut adalah butir-butir yang sengaja tidak dikarang dan membutuhkan verifikas
 - [ ] **`[ISI: Tahun Masuk Telkom University]`**: Apakah angkatan 2024 atau 2025? (Sesuai konflik data di atas).
 - [ ] **`[ISI: Peran Spesifik di Proyek TelUGig]`**: Di CV tertulis *Peserta / Kontributor*. Mohon lengkapi bagian mana yang dikerjakan secara spesifik: apakah analisis model pendapatan 15%, riset wawancara UMKM Bojongsoang, atau perancangan alur escrow?
 - [ ] **`[ISI: Rincian Kegiatan Dorm Team Asrama Telkom University]`**: Sertifikat penghargaan nomor `024/SRT/SRXH/BKTEL-U/2026` sudah terbit, namun rincian program kerja harian asrama belum tercantum di CV.
-- [ ] **`[ISI: Foto/Video Dokumentasi MC Sosialisasi SMP]`**: Foto Puteri saat memegang mikrofon memandu acara sosialisasi di SMP Jakarta Timur untuk menggantikan kotak placeholder visual panggung.
+- [x] **`[TERISI] Foto Dokumentasi MC Sosialisasi SMP`**: Sudah diisi dengan foto otentik dokumentasi panggung presentasi sosialisasi Puteri Najma (1024x576) di `public/images/dokumentasi-sosialisasi-mc.png`.
 - [ ] **`[ISI: Testimoni Asli]`**: Kutipan nyata dari dosen pembimbing, ketua tim BizCREATE, rekan panitia PKKMB, atau pembina tim basket. (Seksi testimoni saat ini dimatikan lewat flag `testimonials.enabled = false` agar tidak menampilkan data palsu).
 - [ ] **`[ISI: Link Sertifikat Stakeholder Management & Dorm Team]`**: URL verifikasi kredensial online jika tersedia.
 

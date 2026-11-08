@@ -240,7 +240,7 @@ export const siteContent: SiteContent = {
       role: 'Event Staff — Motivation & Discipline Team (DMT)',
       organization: 'PKKMB Telkom University 2026',
       period: '2026',
-      impactLine: 'Menjaga kedisiplinan dan ketertiban ratusan mahasiswa baru dengan komunikasi asertif, bukan intimidatif.',
+      impactLine: 'Menjaga kedisiplinan dan ketertiban ribuan mahasiswa baru dengan komunikasi asertif, bukan intimidatif.',
       details: [
         'Bertanggung jawab atas penegakan tata tertib dan manajemen waktu seluruh peserta selama masa orientasi kampus.',
         'Memberikan motivasi harian serta arahan terstruktur agar transisi siswa ke dunia perkuliahan berjalan lancar.',
